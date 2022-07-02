@@ -53,7 +53,7 @@ class MarksController extends Controller
 		}
     }
 
-    public function editStudent(Request $request,$id)
+    public function editStudentMark(Request $request,$id)
     {	
     	$students = Student::where('status',1)->get();
     	$mark  = Mark::find($id);
@@ -63,7 +63,7 @@ class MarksController extends Controller
     	return view('marks.create',compact('students','mark'));
     }
 
-    public function updateStudent(Request $request,$id)
+    public function updateStudentMark(Request $request,$id)
     {
     	$rules = [
             'student'   => 'required',
@@ -94,7 +94,7 @@ class MarksController extends Controller
 		}
     }
 
-    public function deleteSTudent(Request $request,$id)
+    public function deleteSTudentMark(Request $request,$id)
     {
     	$mark  = Mark::find($id);
         if(!$mark)

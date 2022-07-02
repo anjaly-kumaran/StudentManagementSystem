@@ -80,7 +80,7 @@
                     cache   = self.data('cache');
                 if(act_type=='delete'){
                     Swal.fire({
-                        title: "Are you sure you want to delete student?",
+                        title: "Are you sure you want to delete student mark?",
                         text: "You won't be able to revert this!",
                         icon: "warning",
                         showCancelButton: true,

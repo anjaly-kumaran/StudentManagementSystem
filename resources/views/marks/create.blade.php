@@ -29,7 +29,7 @@
 	                    <select name="student" id="student" class="form-control form-control-sm" >
 	                        <option value="">--Select--</option>
 	                        @foreach($students as $student)
-	                            <option value="{{ $student->id }}" @isset($student->student_id) @if($student->id==$mark->student_id) selected="" @endif @endisset>{{ $student->name }}</option>
+	                            <option value="{{ $student->id }}" @isset($mark->student_id) @if($student->id==$mark->student_id) selected="" @endif @endisset>{{ $student->name }}</option>
 	                        @endforeach
 	                   </select>
 	                </div>
