@@ -12,7 +12,8 @@
 ---------------------------------------------
 Steps
 1.In XAMPP - Start Apache,and MySQL
-2.Create database with naame app_test_students in localhost/phpmyadmin
+2.Create .env file Please copy the content from the file .env.example
+2.Create database with name app_test_students in localhost/phpmyadmin
 3.Change DB configurations in .env file(DB_DATABASE,DB_USERNAME,DB_PASSWORD)
 4.Run migration - php artisan migrate
 5.Run seeder - php artisan db:seed
